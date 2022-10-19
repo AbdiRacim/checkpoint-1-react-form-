@@ -47,9 +47,6 @@ import Container from 'react-bootstrap/Container';
         </p>
         
 
-  
-
-
 
     </main>
     </div>
@@ -60,8 +57,8 @@ import Container from 'react-bootstrap/Container';
         alt="171x180"
         src="https://media.istockphoto.com/vectors/flag-ribbon-welcome-old-school-flag-banner-vector-id1223088904?k=20&m=1223088904&s=612x612&w=0&h=b_ilJpFTSQbZeCrZusHRLEskmfiONWH0hFASAJbgz9g="
       />
-      <Figure.Caption>
-        Nulla vitae elit libero, a pharetra augue mollis interdum.
+      <Figure.Caption className="c3">
+        Welcome to this formulaire, please right your First and Last name with your email adress and password 
       </Figure.Caption>
     </Figure>
 
