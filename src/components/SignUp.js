@@ -11,6 +11,7 @@ export default function SignUp() {
         Lastname:"",
         email:"",
         password:"",
+        checked:"",
     })
 
     const handleSubmit = (event) => {
@@ -20,6 +21,7 @@ export default function SignUp() {
 ${form.Lastname }
 ${form.email}
 ${form.password}
+${form.checked }
 `)
     }
             const [show, setShow] = useState(false);
@@ -67,7 +69,9 @@ ${form.password}
                 onChange={(event) => setForm({...form, password: event.target.value})}/>
             </Form.Group>
             <Form.Group className="mb-3" controlId="formBasicCheckbox">
-                <Form.Check type="checkbox" label="Check me out" />
+                <Form.Check type="checkbox" label="Check me out" 
+                value={form.checked}
+                onChange={(event) => setForm({...form, checked: event.target.checked})}/>
             </Form.Group>
                         <Button ref={target} onClick={() => setShow(!show)} type="submit">
                     Click to Submit !
